@@ -3,7 +3,7 @@ const cors = require("cors");
 const fetch=(...args)=>
     import('node-fetch').then(({default:fetch})=>fetch(...args));
 const app = express();
-
+require("dotenv").config();
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
